@@ -2,15 +2,68 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
-
-        <title>Ordering food</title>
-        <div>
-            <img src="restaurant.jpg" alt="Restaurant" class="bg">
-        </div>
+        <title>Food shop</title>
     </head>
-    <body>
+    
+    <header>             
+        <div id="img-background"></div>  
+        <h1 id="ord-txt">Ordering food</h1>
+        <img id="logo" src="logo.jpg" alt="food">
+        <h3 id="logo-name">Fire delight</h3>
+        <hr id="sep1">
 
-        <h1>My First Heading</h1>
-        <p>My first paragraph.</p>
+        <ul class="menu">
+            <li><a href="default.asp">Home</a></li>
+            <li><a href="news.asp">About</a></li>
+            <li><a href="contact.asp">Service</a></li>
+            <li><a href="about.asp">Blog</a></li>
+            <li><a href="about.asp">Contacts</a></li>
+        </ul>
+        <p id="description">
+            We eat with our eyes first, but before we see our food, we picture it while reading the menu descriptions. They say one image is worth a thousand words, but don't underestimate the power of words.
+        </p>
+
+    </header>
+
+    <body>
+        <div id="filter-div">
+            <select name="category" id="category">
+                <option value="pizza">Pizza</option>
+                <option value="salad">Salad</option>
+                <option value="pasta">Pasta</option>
+                <option value="soup">Soup</option>
+                <option value="none" selected disabled hidden>Category</option>
+            </select>
+
+            <select name="price-sorting" id="price-sorting">
+                <option value="ascending">Ascending</option>
+                <option value="descending">Descending</option>
+                <option value="none" selected disabled hidden>Price Sorting</option>
+            </select>
+
+            <select name="vegetarian" id="vegetarian">
+                <option value="pizza">Pizza</option>
+                <option value="salad">Salad</option>
+                <option value="soup">Soup</option>
+                <option value="none" selected disabled hidden>Vegetarian</option>
+            </select>
+
+        </div>
+        <br>
+        <br>
+        <br>
     </body>
+
+    <footer>
+        <div id="footer">
+            <div id="footer-text">
+                <p id="footer-text-p">© 2021 Fire delight. All rights reserved.</p>
+            </div>
+            <div id="footer-social">
+                <a href="https://www.facebook.com/"><img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="facebook" style="width:50px;height:50px;"></a>
+                <a href="https://www.instagram.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="instagram" style="width:50px;height:50px;"></a>
+                <a href="https://www.twitter.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/1200px-Logo_of_Twitter.svg.png" alt="twitter" style="width:50px;height:50px;"></a>
+            </div>
+        </div>
+    </footer>
 </html>

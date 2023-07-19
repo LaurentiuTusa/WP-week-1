@@ -1,17 +1,17 @@
-bg {
-    position: absolute;
+#img-background {
     width: 100%; 
-    height: 333px;
-    
+    height: 400px;
+    background-image: url('restaurant.jpg');
+    background-size: cover;
 }
 
 body {
-    background-color: rgb(220, 216, 216);
+    background-color: rgb(255, 255, 255);
 }
 
-* {
+/* * {
     border: 1px solid red;
-}
+} */
 
 h1 {
     text-align: center;
@@ -20,4 +20,133 @@ h1 {
     color: rgb(0, 0, 0);
     margin-top: 0px;
     margin-bottom: 0px;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#ord-txt {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    
+}
+
+#logo {
+    background-image: url("logo.jpg");
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 7%;
+    left: 4%;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+#logo-name {
+    position: absolute;
+    top: 7%;
+    left: 8%;
+    color: white;
+    border-bottom: 1px solid black;
+    text-transform: uppercase;
+    font-size: medium;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#sep1 {
+    position: absolute;
+    top: 24%;
+    left: 50%;
+    width: 500px;
+    height: 3px;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    
+}
+
+.menu {
+    position: absolute;
+    top: 5%;
+    left: 70%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: rgb(87, 51, 0);
+    border: 2px solid rgb(108, 76, 0);
+    box-shadow: 2px 2px 4px #000000;
+}
+
+.menu li {
+    float: left;
+    
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    border-right: 1px solid #bbb;
+}
+
+.menu li:last-child {
+    border-right: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+}
+
+.menu li a:hover {
+    background-color: rgb(207, 169, 0);
+}
+
+#description {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 4px #000000;
+    
+}
+
+#filter-div {
+    height: 30px;
+    padding-left: 50px;
+    background-color: #fff173;
+}
+
+#filter-div select {
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(79, 55, 0);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    margin: 0 20px;
+    background-color: rgb(235, 211, 34);
+}
+
+
+#footer-social {
+    
+}
+
+#footer-social a {
+    display: block;
+    width: 50px;
 }
