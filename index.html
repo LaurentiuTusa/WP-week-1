@@ -2,6 +2,10 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
+        <script src="myscripts.js" defer></script>
+
+        <link href="nouislider.css" rel="stylesheet">
+        <script src="nouislider.js" defer></script>
         <title>Food shop</title>
     </head>
     
@@ -48,26 +52,77 @@
                 <option value="none" selected disabled hidden>Vegetarian</option>
             </select>
 
-            <div class="slidecontainer">
+            <!-- <div class="slidecontainer">
 
                 <input type="range" min="1" max="100" value="50" class="slider" id="myRange"></div>
+                <p>Value: <span id="sliderValue"></span></p>
 
+            </div> -->
+
+            <!-- <div class="price-filter">
+                <p id="min-slider"></p>
+                <div id="uislider"></div>
+                <p id="max-slider"></p>
             </div>
+
+            <div id="slider"></div> -->
+
+            <div class="wrapper">
+                <div class="price-input">
+                  <div class="field">
+                    <span>Min</span>
+                    <input type="number" class="input-min" value="10">
+                  </div>
+                  
+                  <div class="field">
+                    <input type="number" class="input-max" value="30">
+                    <span>Max</span>
+                  </div>
+                </div>
+                
+                <div class="slider">
+                  <div class="progress"></div>
+                </div>
+                <div class="range-input">
+                  <input type="range" class="range-min" min="0" max="50" value="10" step="1">
+                  <input type="range" class="range-max" min="0" max="50" value="30" step="1">
+                </div>
+            </div>
+            <script src="script.js"></script>
+
+
+
 
             <div class="products">
                 <div class="individual-product">
-                    <img id="product1" src="https://www.simplyrecipes.com/thmb/CWzxvl8dpC_zkjjRqEE6fBCS6DQ=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Simply-Recipes-Homemade-Pizza-Dough-Lead-Shot-1c-c2b1885d27d4481c9cfe6f6286a64342.jpg" alt="product1" style="width:100px;height:100px;">
-                    <h3 class="product-name">Pizza1</h3>
+                    <img id="product1" src="https://www.simplyrecipes.com/thmb/CWzxvl8dpC_zkjjRqEE6fBCS6DQ=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Simply-Recipes-Homemade-Pizza-Dough-Lead-Shot-1c-c2b1885d27d4481c9cfe6f6286a64342.jpg" alt="product1">
+                    <h3 class="product-name">Pizza Buratta</h3>
+                    <h4 class="product-category">Pizza</h4>
+                    <h4 class="product-price">10 $</h4>
                 </div>
                 <div class="individual-product">
-                    <img id="product2" src="https://www.allrecipes.com/thmb/5SdUVhHTMs-rta5sOblJESXThEE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/11691-tomato-and-garlic-pasta-ddmfs-3x4-1-bf607984a23541f4ad936b33b22c9074.jpg" alt="product2" style="width:100px;height:100px;">
-                    <h3 class="product-name">Pasta1</h3>
+                    <img id="product2" src="https://www.allrecipes.com/thmb/5SdUVhHTMs-rta5sOblJESXThEE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/11691-tomato-and-garlic-pasta-ddmfs-3x4-1-bf607984a23541f4ad936b33b22c9074.jpg" alt="product2">
+                    <h3 class="product-name">Pasta Bolognesse</h3>
+                    <h4 class="product-category">Pasta</h4>
+                    <h4 class="product-price">9.5 $</h4>
                 </div>
                 <div class="individual-product">
-                    
+                    <img id="product3" src="https://demuths.co.uk/img/u/images/_256x256_crop_center-center_70_none/a0bbcdaf-8b01-4a10-99f2-cde9785d5e1d.jpeg" alt="product3">
+                    <h3 class="product-name">Demuths Soup</h3>
+                    <h4 class="product-category">Soup</h4>
+                    <h4 class="product-price">8.5 $</h4>
                 </div>
                 <div class="individual-product">
-                    
+                    <img id="product4" src="https://files.yappe.in/place/small/malabar-cafe-2538191.webp" alt="product4">
+                    <h3 class="product-name">Yappe Soup</h3>
+                    <h4 class="product-category">Soup</h4>
+                    <h4 class="product-price">9.2 $</h4>
+                </div>
+                <div class="individual-product">
+                    <img id="product5" src="https://www.seriouseats.com/thmb/Fi_FEyVa3_-_uzfXh6OdLrzal2M=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/the-best-caesar-salad-recipe-06-40e70f549ba2489db09355abd62f79a9.jpg" alt="product5">
+                    <h3 class="product-name">Caesar Salad</h3>
+                    <h4 class="product-category">Salad</h4>
+                    <h4 class="product-price">7.3 $</h4>
                 </div>
             </div>
 
