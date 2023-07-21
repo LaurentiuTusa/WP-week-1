@@ -249,7 +249,7 @@ header {
     /* background: #fff; */
     position: absolute;
     margin-left: 50px;
-    display: inline-block;
+    display: inline-flex;
   }
 
   .price-input{
@@ -264,7 +264,7 @@ header {
     align-items: center;
   }
   .field input{
-    width: 100%;
+    width: 50%;
     height: 100%;
     outline: none;
     font-size: 19px;
@@ -286,6 +286,12 @@ header {
     align-items: center;
     justify-content: center;
   }
+
+ .middle{
+    width: 850px;
+    margin-top: 11px;
+ }
+
   .slider{
     height: 5px;
     position: relative;
