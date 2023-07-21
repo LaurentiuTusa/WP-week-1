@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <title>Food shop</title>
+    </head>
+    
+<!-- header -->
+    <header>             
+        <div id="img-background"></div>  
+        <h1 id="ord-txt">Ordering food</h1>
+        <img id="logo" src="logo.jpg" alt="food">
+        <h3 id="logo-name">Fire delight</h3>
+        <hr id="sep1">
+
+<!-- top menu -->
+        <ul class="menu">
+            <li><a href="default.asp">Home</a></li>
+            <li><a href="news.asp">About</a></li>
+            <li><a href="contact.asp">Service</a></li>
+            <li><a href="about.asp">Blog</a></li>
+            <li><a href="about.asp">Contacts</a></li>
+        </ul>
+        <p id="description">
+            We eat with our eyes first, but before we see our food, we picture it while reading the menu descriptions. They say one image is worth a thousand words, but don't underestimate the power of words.
+        </p>
+
+    </header>
+
+<!-- body -->
+    <body>
+
+<!-- filters -->
+        <div id="filter-div">
+            <select name="category" id="category">
+                <option value="pizza">Pizza</option>
+                <option value="salad">Salad</option>
+                <option value="pasta">Pasta</option>
+                <option value="soup">Soup</option>
+                <option value="none" selected disabled hidden>Category</option>
+            </select>
+
+            <select name="price-sorting" id="price-sorting">
+                <option value="ascending">Ascending</option>
+                <option value="descending">Descending</option>
+                <option value="none" selected disabled hidden>Price Sorting</option>
+            </select>
+
+            <select name="vegetarian" id="vegetarian">
+                <option value="pizza">Pizza</option>
+                <option value="salad">Salad</option>
+                <option value="soup">Soup</option>
+                <option value="none" selected disabled hidden>Vegetarian</option>
+            </select>
+
+<!-- price range -->
+            <div class="wrapper">
+                <div class="price-input">
+                  <div class="field">
+                    <span>Min</span>
+                    <input type="number" class="input-min" value="10">
+                  </div>
+                </div>
+
+                <div class="middle">
+                    <div class="slider">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="range-input">
+                        <input type="range" class="range-min" min="0" max="50" value="10" step="1">
+                        <input type="range" class="range-max" min="0" max="50" value="30" step="1">
+                    </div>
+                </div>
+
+                <div class="price-input">
+                  <div class="field">
+                    <input type="number" class="input-max" value="30">
+                    <span>Max</span>
+                  </div>
+                </div>
+                
+            </div>
+        </div>
+
+<!-- products display -->
+        <div class="products">
+            <div class="individual-product">
+                <img id="product1" src="https://www.simplyrecipes.com/thmb/CWzxvl8dpC_zkjjRqEE6fBCS6DQ=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Simply-Recipes-Homemade-Pizza-Dough-Lead-Shot-1c-c2b1885d27d4481c9cfe6f6286a64342.jpg" alt="product1">
+                <h3 class="product-name">Pizza Buratta</h3>
+                <h4 class="product-category">Pizza</h4>
+                <h4 class="product-price">11 $</h4>
+            </div>
+            <div class="individual-product">
+                <img id="product2" src="https://www.allrecipes.com/thmb/5SdUVhHTMs-rta5sOblJESXThEE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/11691-tomato-and-garlic-pasta-ddmfs-3x4-1-bf607984a23541f4ad936b33b22c9074.jpg" alt="product2">
+                <h3 class="product-name">Pasta Bolognesse</h3>
+                <h4 class="product-category">Pasta</h4>
+                <h4 class="product-price">9.5 $</h4>
+            </div>
+            <div class="individual-product">
+                <img id="product3" src="https://demuths.co.uk/img/u/images/_256x256_crop_center-center_70_none/a0bbcdaf-8b01-4a10-99f2-cde9785d5e1d.jpeg" alt="product3">
+                <h3 class="product-name">Demuths Soup</h3>
+                <h4 class="product-category">Soup</h4>
+                <h4 class="product-price">8.5 $</h4>
+            </div>
+            <div class="individual-product">
+                <img id="product4" src="https://files.yappe.in/place/small/malabar-cafe-2538191.webp" alt="product4">
+                <h3 class="product-name">Yappe Soup</h3>
+                <h4 class="product-category">Soup</h4>
+                <h4 class="product-price">9.2 $</h4>
+            </div>
+            <div class="individual-product">
+                <img id="product5" src="https://www.seriouseats.com/thmb/Fi_FEyVa3_-_uzfXh6OdLrzal2M=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/the-best-caesar-salad-recipe-06-40e70f549ba2489db09355abd62f79a9.jpg" alt="product5">
+                <h3 class="product-name">Caesar Salad</h3>
+                <h4 class="product-category">Salad</h4>
+                <h4 class="product-price">6.3 $</h4>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+    </body>
+
+<!-- footer -->
+    <footer>
+        <div id="footer">
+            <div id="footer-text">
+                <p id="footer-text-p">© 2021 Fire delight. All rights reserved.</p>
+            </div>
+            <div id="footer-social">
+                <a href="https://www.facebook.com/"><img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="facebook" style="width:50px;height:50px;"></a>
+                <a href="https://www.instagram.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="instagram" style="width:50px;height:50px;"></a>
+                <a href="https://www.twitter.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/1200px-Logo_of_Twitter.svg.png" alt="twitter" style="width:50px;height:50px;"></a>
+            </div>
+        </div>
+    </footer>
+</html>
